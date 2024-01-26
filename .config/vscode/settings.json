@@ -1,0 +1,56 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "explorer.confirmDelete": false,
+    "editor.bracketPairColorization.enabled": true,
+    "redhat.telemetry.enabled": false,
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "workbench.editorAssociations": {
+        "*.exe": "default"
+    },
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu"
+            ]
+        }
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "workbench.startupEditor": "none",
+    "window.zoomLevel": 2,
+    "update.showReleaseNotes": false,
+    "workbench.colorTheme": "Catppuccin Frappé",
+    "vim.disableExtension": true,
+    "vim.useSystemClipboard": true,
+    "explorer.autoReveal": "focusNoScroll",
+    "window.commandCenter": false,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "zenMode.centerLayout": false,
+    "zenMode.showTabs": "none",
+    "editor.fontSize": 18,
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.fontLigatures": true,
+}
