@@ -1,0 +1,7 @@
+[user]
+	name = onecard
+	email = 43199107+onecardone@users.noreply.github.com
+[init]
+	defaultBranch = main 
+[core]
+	editor = vim
