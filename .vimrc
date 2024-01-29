@@ -29,5 +29,13 @@ nnoremap <leader>V :tabnew  ~/.vimrc<CR>
 nnoremap <C-j> <C-d>zz
 nnoremap <C-k> <C-u>zz
 
+" center search results
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
+
 " references
 " https://github.com/Netherdrake/Dotfiles
