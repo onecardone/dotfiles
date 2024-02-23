@@ -1,56 +1,104 @@
 {
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "explorer.confirmDelete": false,
+    // general
+    "diffEditor.maxComputationTime": 0, // For diffing big files
     "editor.bracketPairColorization.enabled": true,
-    "redhat.telemetry.enabled": false,
-    "[xml]": {
-        "editor.defaultFormatter": "redhat.vscode-xml"
-    },
-    "workbench.editorAssociations": {
-        "*.exe": "default"
-    },
-    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ],
-            "args": [],
-            "icon": "terminal-cmd"
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        },
-        "Ubuntu (WSL)": {
-            "path": "C:\\WINDOWS\\System32\\wsl.exe",
-            "args": [
-                "-d",
-                "Ubuntu"
-            ]
-        }
-    },
-    "[python]": {
-        "editor.formatOnType": true
-    },
-    "terminal.integrated.sendKeybindingsToShell": true,
-    "workbench.startupEditor": "none",
-    "window.zoomLevel": 2,
-    "update.showReleaseNotes": false,
-    "workbench.colorTheme": "Catppuccin Frappé",
-    "vim.disableExtension": true,
-    "vim.useSystemClipboard": true,
-    "explorer.autoReveal": "focusNoScroll",
-    "window.commandCenter": false,
-    "workbench.editor.editorActionsLocation": "hidden",
-    "zenMode.centerLayout": false,
-    "zenMode.showTabs": "none",
-    "editor.fontSize": 18,
+    "editor.cursorStyle": "block",
     "editor.fontFamily": "FiraCode Nerd Font",
     "editor.fontLigatures": true,
+    "editor.fontSize": 18,
+    "explorer.autoReveal": "focusNoScroll",
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.scrollback": 50000,
+    "terminal.integrated.showExitAlert": false,
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.mode": "manual",
+    "update.showReleaseNotes": false,
+    "window.commandCenter": false,
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Catppuccin Frappé",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.editor.wrapTabs": true,
+    "workbench.startupEditor": "none",
+    "zenMode.centerLayout": false,
+    "zenMode.showTabs": "none",
+
+    // integrated terminal behavior
+    "terminal.integrated.commandsToSkipShell": [
+      "-workbench.action.quickOpen"
+    ],
+    "terminal.integrated.sendKeybindingsToShell": false, // Sometimes good, sometimes not
+    
+    // vim extension
+    "vim.handleKeys": {
+      "<C-b>": false, // Side Bar Visiblity
+      "<C-e>": false, // Explorer (rebound from default) 
+      "<C-k>": false, // Chords
+      "<C-p>": false, // Quick Open
+      "<C-s>": false, // Save Files
+      "<C-t>": false, // Integrated Terminal - FuzzyFinder
+      "<C-o>": false, // Open File
+      "<C-w>": false, // Close Editor / Tab
+      "<C-z>": false // Undo
+    },
+    "vim.useSystemClipboard": true,
+    "vim.vimrc.enable": true,
+
+    // disable telemetry, auto-update, etc.
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.telemetry.enabled": false,
+    "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "off",
+   
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
+    
+    "workbench.cloudChanges.autoResume": "off",
+    "workbench.cloudChanges.continueOn": "off",
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "npm.fetchOnlinePackageInfo": false,
+
+    // ansible and git
+    "ansible.validation.enabled": false,
+    "[ansible]": {
+      "gitlens.codeLens.scopes": [
+        "document"
+      ],
+      "editor.detectIndentation": true,
+      "editor.insertSpaces": true,
+      "editor.tabSize": 2,
+      "editor.quickSuggestions": {
+        "comments": true,
+        "other": true,
+        "strings": true
+      }
+    },
+    
+    // gitLens
+    "gitlens.advanced.repositorySearchDepth": 1,
+    "git.repositoryScanMaxDepth": 2,
+
+
+
+
+
+
+    // custom - dont copy me
+    // "git.scanRepositories": [
+    //   "~/git/*"
+    // ],
+    // "remote.SSH.serverInstallPath": {
+    //   // "xxxxx": "xxxxx.vscode-server-jarod"
+    // },
+
+    // custom - dont copy me
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "remote.SSH.remotePlatform": {
+      "ch": "linux",
+      "ls": "linux"
+    },
+    
+    // Etc.
+    "liveServer.settings.donotShowInfoMsg": true
 }

@@ -5,6 +5,11 @@
         "command": "workbench.action.toggleMaximizedPanel"
     },
     {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen",
+        "when":"terminal.active"
+    },
+    {
         "key": "ctrl+shift+alt+v",
         "command": "toggleVim"
     },
@@ -26,5 +31,5 @@
         "key": "ctrl+shift+`",
         "command": "-workbench.action.terminal.new",
         "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-    }
+    },
 ]
